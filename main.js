@@ -2,28 +2,14 @@ let todos = ["buy new turtle"];
 
 let input = prompt("Enter type of action to perform 🤖 : New, Delete, List, Quit ")
 
-while(input !== "quit") {
-    // handle input
-    if(input === "list") {
-        listToDos();   
-    } else if (input === "new") {
-        addTodo();
-    } else if (input === "delete") {
-        deleteTodo();
-    }
-    
-    //ask again for new input
-    input = prompt("Enter type of action to perform 🤖 : New, Delete, List, Quit ");
-}
-console.log("OK, you quit the app")
-
+// ----------------------- functions ----------------------
 function listToDos() {
     console.log('**************');
     
     todos.forEach(function(todo, i){
         console.log(i + ': ' + todo);
-        console.log('**************');
     });
+    console.log('**************');
 }
 
 function addTodo() {
@@ -40,3 +26,34 @@ function deleteTodo() {
     todos.splice(index, 1)
     console.log('Deleted to do');
 }
+
+// ------------- loop prompt -------------------
+while(input !== "quit") {
+    // handle input
+    if(input === "list") {
+        listToDos();   
+    } else if (input === "new") {
+        addTodo();
+    } else if (input === "delete") {
+        deleteTodo();
+    }
+    
+    //ask again for new input
+    input = prompt("Enter type of action to perform 🤖 : New, Delete, List, Quit ");
+}
+console.log("OK, you quit the app")
+
+
+// ----------------------------------
+const newTodoBtn = document.querySelector("#newTodoBtn");
+let isBlue = false;
+
+// changes color of the box
+setInterval(function() {
+    if(isBlue) {
+        newTodoBtn.style.background = "pink";
+    } else {
+        newTodoBtn.style.background = "#3498db";
+    }
+    isBlue = !isBlue;
+    }, 1000);
