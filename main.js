@@ -57,3 +57,5 @@ setInterval(function() {
     }
     isBlue = !isBlue;
     }, 1000);
+
+    console.log(newToDoBtn);
