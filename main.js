@@ -44,18 +44,18 @@ while(input !== "quit") {
 console.log("OK, you quit the app")
 
 
-// ----------------------------------
-const newTodoBtn = document.querySelector("#newTodoBtn");
+// ---------------------------------- to debug  
+const newTodoBtn = document.getElementById("#newTodoBtn");
 let isBlue = false;
 
 // changes color of the box
 setInterval(function() {
     if(isBlue) {
-        newTodoBtn.style.background = "pink";
+        newTodoBtn.style.background="white";
     } else {
-        newTodoBtn.style.background = "#3498db";
+        newTodoBtn.style.background="blue";
     }
     isBlue = !isBlue;
     }, 1000);
 
-    console.log(newToDoBtn);
+console.log(newTodoBtn);
