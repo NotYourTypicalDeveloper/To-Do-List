@@ -47,21 +47,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
     console.log("OK, you quit the app")
     
     
-    // ---------------------------------- to debug  
+    // ---------------------------------- functions for fun----- 
     const newTodoBtn = document.querySelector("#newTodoBtn");
     let isBlue = false;
     
     // changes color of the box
-    newTodoBtn.style.color="blue";
     
     setInterval(function() {
         if(isBlue) {
-            newTodoBtn.style.background="white";
+            newTodoBtn.style.background="lightpink";
+            newTodoBtn.style.color="blue"
         } else {
             newTodoBtn.style.background="blue";
+            newTodoBtn.style.color="white"
         }
         isBlue = !isBlue;
     }, 1000);
     
     console.log(newTodoBtn);
-});
+
+    // toggle class on the Quit button
+    const quitBtn = document.querySelector('button');
+
+    quitBtn.addEventListener('click', 
+        function changeColor(e) {
+            e.preventDefault;
+            quitBtn.classList.add("styleTwo");
+        });
+    });
