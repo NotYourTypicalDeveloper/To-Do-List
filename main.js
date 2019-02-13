@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     console.log(newTodoBtn);
 
     // toggle class on the Quit button
-    const quitBtn = document.querySelector('button');
+    const quitBtn = document.querySelector('#quitBtn');
 
     quitBtn.addEventListener('click', 
         function changeColor(e) {
@@ -75,3 +75,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             quitBtn.classList.add("styleTwo");
         });
     });
+
+    // toggle background color
+const delBtn = document.querySelector('#deleteBtn');
+const body = document.querySelector('body');
+
+delBtn.addEventListener('click',
+    function (e) {
+        e.preventDefault;
+        body.classList.toggle(".backgroundColor");
+    });
+
+
