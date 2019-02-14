@@ -83,7 +83,7 @@ const body = document.querySelector('body');
 delBtn.addEventListener('click',
     function (e) {
         e.preventDefault;
-        body.classList.toggle(".backgroundColor");
+        body.classList.toggle("backgroundColor");
     });
 
 
