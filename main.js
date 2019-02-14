@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     quitBtn.addEventListener('click', 
         function changeColor(e) {
             e.preventDefault;
-            quitBtn.classList.add("styleTwo");
+            quitBtn.classList.toggle("styleTwo");
         });
     });
 
