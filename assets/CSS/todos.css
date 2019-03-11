@@ -1,0 +1,6 @@
+body {
+    background: rgb(175, 205, 243);
+    width: 360px;
+    margin: 20vh auto;
+    border: 2px solid grey;
+}
