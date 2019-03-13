@@ -21,5 +21,9 @@ $("input[type='text']").keypress(function(event) {
     // create a new li and add it to the ul
     $('ul').append("<li><span><i class='far fa-trash-alt'></i></span> " + todoText + '</li>');
   }
-  
 });
+
+$('.fa-plus').click(function() {
+  $("input[type='text']").fadeToggle();
+});
+
