@@ -1,15 +1,19 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #2BC0E4;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAECC6, #2BC0E4);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(../photos/bck1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1 {
-    background-color: #2980b9;
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-color: #2980b9; */
     color: white;
     margin: 0;
     padding: 10px 20px;
@@ -73,10 +77,10 @@ input:focus {
     outline: none;
 }
 
-#container {
+#toDoBox {
     width: 360px;
     background: #f7f7f7;
-    margin: 100px auto;
+    margin: 200px auto;
     box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
 

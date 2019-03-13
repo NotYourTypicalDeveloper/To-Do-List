@@ -27,3 +27,22 @@ $('.fa-plus').click(function() {
   $("input[type='text']").fadeToggle();
 });
 
+// change background every 5 minutes
+$(function() {
+  const body = $('body');
+  const backgrounds = [
+   'url(assets/photos/bck1.jpg)',
+   'url(assets/photos/bck2.jpg)',
+   'url(assets/photos/bck3.jpg)',
+   'url(assets/photos/bck4.jpg)',
+   'url(assets/photos/bck5.jpg)',
+  ];
+  var current = 0;
+
+  function nextBackground() {
+    body.css('background-image', backgrounds[current = ++current % backgrounds.length]);
+  }
+  setTimeout(nextBackground, 1000);
+  body.css('background-image', backgrounds[0]);
+  console.log( backgrounds );
+});
