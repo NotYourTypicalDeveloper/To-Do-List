@@ -4,7 +4,42 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #000046;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+
+}   
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
 
 h1 {
     background: #000046;
@@ -29,14 +64,14 @@ ul {
     padding: 0;
 }
 
-li {
-    background: #fff;
+#taskList > li {
+    background: #fff; 
     height: 40px;
     line-height: 40px;
     color: #666;
 }
 
-li:nth-child(2n) {
+#taskList > li:nth-child(2n) {
     background-color: #f7f7f7;
 }
 
