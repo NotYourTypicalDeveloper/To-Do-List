@@ -27,6 +27,33 @@ $('.fa-plus').click(function() {
   $("input[type='text']").fadeToggle();
 });
 
+// animation of the burger menu navbar 
+
+  const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+  nav.classList.toggle('nav-active');
+  });
+}
+
+navSlide();
+
+// $(document).ready(function() {
+//   const burger = $('.burger');
+//   const nav = $('.nav-links');
+  
+//   function toggleBurger() {
+//     nav.toggleClass('.nav-active');
+//   }
+
+//   burger.on('click', toggleBurger());
+// });
+
+
+
+
 // change background every 5 minutes
 // $(function() {
 //   const body = $('body');

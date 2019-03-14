@@ -40,6 +40,55 @@ nav {
     font-size: 14px;
 }
 
+/*responsive burger menu*/
+.burger {
+    width: 35px;
+    display: none;
+}
+
+.fa-hamburger { 
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        background-repeat: repeat-y;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        fle x-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;  
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/*MAIN*/ 
 
 h1 {
     background: #000046;
@@ -56,6 +105,34 @@ h1 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 100%;
+}
+
+/*TASKLIST*/
+
+#toDoBox {
+    width: 360px;
+    background: #f7f7f7;
+    margin: 200px auto;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+/*INPUT BOX*/
+input {
+    font-size: 18px;
+    color: #2980b9;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
 }
 
 ul {
@@ -87,6 +164,7 @@ span {
     opacity: 0;
 }
 
+/*MAKE THE TRASH ICON APPEAR*/
 li:hover span {
     width: 40px;
     opacity: 1;
@@ -96,32 +174,7 @@ li:hover span {
     float: right;
 }
 
-
-input {
-    font-size: 18px;
-    color: #2980b9;
-    font-style: italic;
-    font-weight: lighter;
-    background-color: #f7f7f7;
-    width: 100%;
-    padding: 13px 13px 13px 20px;
-    box-sizing: border-box;
-    border: 3px solid rgba(0,0,0,0);
-}
-
-input:focus {
-    background: #fff;
-    border: 3px solid #2980b9;
-    outline: none;
-}
-
-#toDoBox {
-    width: 360px;
-    background: #f7f7f7;
-    margin: 200px auto;
-    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
-}
-
+/*Strike-through once task is clicked*/
 .completed {
     color: gray;
     text-decoration: line-through;
