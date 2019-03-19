@@ -1,5 +1,7 @@
 console.log('connected');
 
+const taskList = $('ul#taskList');
+
 //check off specific todos by clicking
 $('ul').on('click', 'li', function(){
   $(this).toggleClass('completed');
@@ -18,8 +20,9 @@ $("input[type='text']").keypress(function(event) {
     //grab new todo text from the input
     let todoText = $(this).val();
     $(this).val('');
-    // create a new li and add it to the ul
-    $('ul').append("<li><span><i class='far fa-trash-alt'></i></span> " + todoText + '</li>');
+    console.log(todoText);
+    // create a new li and add it to the todo list
+    taskList.append("<li><span><i class='far fa-trash-alt'></i></span>" + todoText + '</li>');
   }
 });
 
