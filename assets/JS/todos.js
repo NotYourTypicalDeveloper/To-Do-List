@@ -1,9 +1,11 @@
 console.log('connected');
 
 const taskList = $('ul#taskList');
+const singleTodo = $('ul#taskList > li');
+console.log(singleTodo);
 
 //check off specific todos by clicking
-$('ul').on('click', 'li', function(){
+taskList.on('click', 'li', function(){
   $(this).toggleClass('completed');
 });
 
