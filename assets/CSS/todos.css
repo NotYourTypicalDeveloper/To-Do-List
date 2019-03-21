@@ -65,7 +65,7 @@ nav {
         /* background-repeat: repeat-y; */
     }
     
-    .burger {
+    .burger-icon {
         display: block;
     }
 
@@ -74,7 +74,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
         align-items: center;
