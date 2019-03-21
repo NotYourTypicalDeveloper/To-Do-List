@@ -32,19 +32,32 @@ $('.fa-plus').click(function() {
   $("input[type='text']").fadeToggle();
 });
 
-// animation of the burger menu navbar 
+// ============= Animation of the BURGER MENU NAVBAR ============
 
-  const navSlide = () => {
+const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
 
   burger.addEventListener('click', () => {
-  nav.classList.toggle('nav-active');
+    // Toggle nav
+    nav.classList.toggle('nav-active');
+    });
+
+    // animate links 
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link,style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`
+      }
   });
 }
 
 navSlide();
 
+
+// jQuery version but does not work? 
 // $(document).ready(function() {
 //   const burger = $('.burger');
 //   const nav = $('.nav-links');
@@ -59,7 +72,7 @@ navSlide();
 
 
 
-// change background every 5 minutes
+// CHANGE BACKGROUND IMAGE EVERY SECOND
 // $(function() {
 //   const body = $('body');
 //   const backgrounds = [
