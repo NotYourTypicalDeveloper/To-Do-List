@@ -4,6 +4,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const burgerIcon = document.querySelector('.fa-hamburger');
 
     burger.addEventListener('click', () => {
         // Toggle nav
@@ -15,13 +16,15 @@ const navSlide = () => {
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`
             }
+            burgerIcon.classList.toggle('.toggle-burger');
         });
+
+        // burger animation
     });
 
 }
 
 navSlide();
-
 
 // jQuery version but does not work? 
 // $(document).ready(function() {

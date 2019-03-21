@@ -54,7 +54,7 @@ nav {
         /* background-repeat: repeat-y; */
     }
 
-    .burger-icon {
+    .burger {
         display: block;
     }
 
@@ -88,9 +88,12 @@ nav {
     }
 
     to {
-
         opacity: 1;
         transform: translateX(0px);
 
     }
+}
+
+.toggle-burger {
+    transform: rotate(-45deg) translate(-5px,6px);
 }
