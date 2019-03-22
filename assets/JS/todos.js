@@ -55,11 +55,21 @@ $('.fa-plus').click(function() {
     body.css('background-image', backgrounds[current = ++current % backgrounds.length]);
     console.log(current);
     
-    if (current === 0 || current === 2 || current === 3) {
-      h1Todo.css("background-color", "brown");
-    } else if (current === 4 || current === 5) {
-      h1Todo.css("background-color", "gray"); 
-    }
+    // if (current === 0 || current === 2 || current === 3) 
+    
+    
+    
+    if (current===0 || current===2) {
+      // h1Todo.css("background-color", "brown");
+      h1Todo.toggleClass('UI-theme-brown');
+    } else if (current===3) {
+      // h1Todo.css("background-color", "brown");
+      h1Todo.toggleClass('UI-theme-brown');
+    } else if (current===4) {
+      // h1Todo.css("background-color", "gray"); 
+      h1Todo.toggleClass('UI-theme-darkgrey');
+    } else if (current===5)
+    h1Todo.toggleClass('UI-theme-multic');
   }
   changeUILink.on('click', nextBackground);
 

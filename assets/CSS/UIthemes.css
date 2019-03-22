@@ -1,0 +1,36 @@
+.UI-theme-brown {
+    background: #1e130c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8478, #1e130c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+.UI-theme-darkgrey {
+    background: #1F1C2C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #1F1C2C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.UI-theme-multic {
+    background: #FC354C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.UI-theme-blue {
+ background: #000046;
+ /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #1CB5E0, #000046);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
