@@ -2,7 +2,6 @@ console.log('connected');
 
 const taskList = $('ul#taskList');
 const singleTodo = $('ul#taskList > li');
-console.log(singleTodo);
 
 //check off specific todos by clicking
 taskList.on('click', 'li', function(){
@@ -35,22 +34,27 @@ $('.fa-plus').click(function() {
 
 
 
-// CHANGE BACKGROUND IMAGE EVERY SECOND
-// $(function() {
-//   const body = $('body');
-//   const backgrounds = [
-//    'url(assets/photos/bck1.jpg)',
-//    'url(assets/photos/bck2.jpg)',
-//    'url(assets/photos/bck3.jpg)',
-//    'url(assets/photos/bck4.jpg)',
-//    'url(assets/photos/bck5.jpg)',
-//   ];
-//   var current = 0;
+//CHANGE BACKGROUND IMAGE EVERY SECOND
 
-//   function nextBackground() {
-//     body.css('background-image', backgrounds[current = ++current % backgrounds.length]);
-//     console.log(current);
-//   }
+const changeUILink = $('#change-ui-link');
+
+  const body = $('body');
+  const backgrounds = [
+   'url(assets/photos/bck1.jpg)',
+   'url(assets/photos/bck2.jpg)',
+   'url(assets/photos/bck3.jpg)',
+   'url(assets/photos/bck4.jpg)',
+   'url(assets/photos/bck5.jpg)',
+  ];
+  var current = 0;
+
+  function nextBackground() {
+    body.css('background-image', backgrounds[current = ++current % backgrounds.length]);
+    console.log(current);
+  }
+  changeUILink.on('click', nextBackground);
+
+
 
 //   setInterval(nextBackground, 5000);
 //   body.css('background-image', backgrounds[0]);
