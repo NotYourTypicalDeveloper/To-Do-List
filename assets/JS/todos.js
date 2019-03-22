@@ -36,7 +36,7 @@ $('.fa-plus').click(function() {
 
 
 
-//CHANGE BACKGROUND IMAGE EVERY SECOND
+//CHANGE BACKGROUND IMAGE once "Change UI" button is clicked
 
   const body = $('body');
   const backgrounds = [
@@ -45,6 +45,7 @@ $('.fa-plus').click(function() {
    'url(assets/photos/bck3.jpg)',
    'url(assets/photos/bck4.jpg)',
    'url(assets/photos/bck5.jpg)',
+   'url(assets/photos/bck6.jpg)',
   ];
   var current = 0;
   const h1Todo = $('#toDoBox h1');

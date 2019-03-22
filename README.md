@@ -5,13 +5,7 @@ Front-end simple application to manage tasks
 The user can:
 add or delete tasks to the list
 
-Step 1:
-![to-do-list-app](https://user-images.githubusercontent.com/41584108/54350271-de21fa80-4644-11e9-9987-72fcd03366e1.png)
-
-Step 2:
-added navbar and burger menu
-
-![Screenshot 2019-03-14 at 20 58 20](https://user-images.githubusercontent.com/41584108/54391286-4819be80-469c-11e9-955d-3866bf76f885.png)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/41584108/54840980-220ca380-4cc6-11e9-97bd-e404b58bd5d3.gif)
 
 
 #Technologies
