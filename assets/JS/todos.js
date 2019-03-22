@@ -3,6 +3,8 @@ console.log('connected');
 const taskList = $('ul#taskList');
 const singleTodo = $('ul#taskList > li');
 
+
+
 //check off specific todos by clicking
 taskList.on('click', 'li', function(){
   $(this).toggleClass('completed');
@@ -36,8 +38,6 @@ $('.fa-plus').click(function() {
 
 //CHANGE BACKGROUND IMAGE EVERY SECOND
 
-const changeUILink = $('#change-ui-link');
-
   const body = $('body');
   const backgrounds = [
    'url(assets/photos/bck1.jpg)',
@@ -47,10 +47,18 @@ const changeUILink = $('#change-ui-link');
    'url(assets/photos/bck5.jpg)',
   ];
   var current = 0;
+  const h1Todo = $('#toDoBox h1');
+  const changeUILink = $('#change-ui-link');
 
   function nextBackground() {
     body.css('background-image', backgrounds[current = ++current % backgrounds.length]);
     console.log(current);
+    
+    if (current === 0 || current === 2 || current === 3) {
+      h1Todo.css("background-color", "brown");
+    } else if (current === 4 || current === 5) {
+      h1Todo.css("background-color", "gray"); 
+    }
   }
   changeUILink.on('click', nextBackground);
 
