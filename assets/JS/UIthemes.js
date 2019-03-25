@@ -31,8 +31,12 @@ function nextBackground() {
     //     h1Todo.addClass('UI-theme-multic');
     // }
 
+    // debugger;
+
     switch(current) {
-        case 0, 2, 3:
+        case 0:
+        case 2:
+        case 3:
             h1Todo.removeClass('UI-theme-multic');
             h1Todo.removeClass('UI-theme-blue');
             h1Todo.addClass('UI-theme-brown');
