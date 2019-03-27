@@ -34,12 +34,16 @@ $('.fa-plus').click(function() {
   $("input[type='text']").fadeToggle();
 });
 
+// create a new todo List
+const toDoBox = $('#toDoBox');
+const newList = document.createElement('toDoBox');
+const newTodoButton = $('#new-to-do-link');
+const body = $('body');
 
+function addNewToDo(body, newList) {
+  console.log('addNewToDo clicked');
+  body.append(newList);
+}
 
-
-
-//   setInterval(nextBackground, 5000);
-//   body.css('background-image', backgrounds[0]);
-//   console.log( backgrounds );
-// });
+newTodoButton.on('click', addNewToDo);
 
