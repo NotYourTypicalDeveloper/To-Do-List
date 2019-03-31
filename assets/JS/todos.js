@@ -41,13 +41,17 @@ const newTodoButton = $('#new-to-do-link');
 const body = $('body');
 
 let index = 0;
+
 function addNewToDo() {
   console.log('addNewToDo clicked');
   // let newDiv = document.createElement('div');
   // document.body.appendChild(newList);
 
-  const clone = toDoBox.cloneNode(true);
-  toDoBox.parentNode.appendChild(clone);
+  const clone = toDoBox[0].cloneNode(true);
+  let container = document.createElement('div');
+  container.appendChild(clone);
+  container.parentNode = $('#container');
+ // toDoBox.parentNode.appendChild(clone);
 }
 
 newTodoButton.on('click', addNewToDo);
